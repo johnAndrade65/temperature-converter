@@ -8,17 +8,22 @@
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
-    <h1 class="text">Temperature Converter</h1>
-    <div class="wrapper">
-        <div class="container">
-            <label for="celsius">Celsius</label>
-            <input type="number" id="celsius" oninput="celToFar()" placeholder="Nº Celsius">
+    <div class="container-g">
+        <h1 class="text">Temperature Converter</h1>
+        <div class="wrapper">
+            <div class="container">
+                <label for="celsius">Celsius</label>
+                <input type="number" id="celsius" oninput="celToFar()" placeholder="Nº Celsius">
+            </div>
+            <div class="container">
+                <label for="fahrenheit">Fahrenheit</label>
+                <input type="number" id="fahrenheit" oninput="farToCel()" placeholder="Nº Fahrenheit">
+            </div>
         </div>
-        <div class="container">
-            <label for="fahrenheit">Fahrenheit</label>
-            <input type="number" id="fahrenheit" oninput="farToCel()" placeholder="Nº Fahrenheit">
-        </div>
+         <button class="button" onclick="alertMsg()">?</button>
+        
     </div>
+    
 
     <script src="./assets/js/script.js"></script>
 </body>
